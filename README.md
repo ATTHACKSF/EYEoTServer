@@ -15,7 +15,11 @@
 
 ##  APIs
 
-POST /voice
+### Base URL
+
+http://attdevtest.mybluemix.net
+
+### POST /voice
 
 HTTP Request
 ```
@@ -23,7 +27,6 @@ Header:
 {
     'Content-Type': 'audio/wav'
 }
-
 Body:
 wave file
 ```
@@ -35,7 +38,6 @@ Success:
     'application_code': 200,
     'resultText': 'Test.'
 }
-
 Failure:
 {
     'application_code': 400,
